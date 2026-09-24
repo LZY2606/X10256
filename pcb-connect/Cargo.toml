@@ -1,0 +1,21 @@
+[package]
+name = "pcb-connect"
+version = "0.1.0"
+edition = "2021"
+description = "Offline Gerber/Excellon/stackup import and copper connectivity candidate workbench"
+
+[dependencies]
+axum = "0.8"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "sync"] }
+tower-http = { version = "0.6", features = ["fs"] }
+rusqlite = { version = "0.37", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1" }
+sha2 = "0.10"
+
+[[bin]]
+name = "pcb-connect"
+path = "src/main.rs"
+
+[profile.dev]
+opt-level = 1
