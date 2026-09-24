@@ -1,0 +1,19 @@
+[package]
+name = "pcb-connectivity-workbench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.8", features = ["macros"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "sync", "time"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+
+[[bin]]
+name = "pcb-workbench"
+path = "src/main.rs"
+
+[profile.dev]
+opt-level = 1
