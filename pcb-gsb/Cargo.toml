@@ -1,0 +1,28 @@
+[package]
+name = "pcb-gsb"
+version = "0.1.0"
+edition = "2021"
+description = "Offline PCB Gerber/Excellon/stackup geometry connectivity workbench"
+
+[lib]
+name = "pcb_gsb"
+path = "src/lib.rs"
+
+[[bin]]
+name = "pcb-gsb"
+path = "src/main.rs"
+
+[dependencies]
+axum = { version = "0.7", features = ["macros"] }
+tokio = { version = "1", features = ["full"] }
+tower = "0.5"
+tower-http = { version = "0.6", features = ["fs", "trace"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4"] }
+sha2 = "0.10"
+chrono = { version = "0.4", features = ["serde"] }
+
+[profile.dev]
+opt-level = 0
