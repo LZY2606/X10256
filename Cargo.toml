@@ -1,0 +1,21 @@
+[package]
+name = "pcb-gsb"
+version = "0.1.0"
+edition = "2021"
+description = "Offline Gerber/Excellon/stackup import, copper reconstruction and connectivity-candidate review workbench"
+
+[dependencies]
+axum = { version = "0.7", features = ["macros"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "sync"] }
+tower = "0.5"
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+
+[[bin]]
+name = "pcb-gsb"
+path = "src/main.rs"
+
+[profile.dev]
+opt-level = 0
