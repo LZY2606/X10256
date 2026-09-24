@@ -1,0 +1,6 @@
+# 铜层连通谱核验台：手工层映射（原始声明，含行号可溯源）
+top.gbr,copper_top
+inner.gbr,copper_inner
+bottom.gbr,copper_bottom
+sm_top.gbr,soldermask_top
+extra.gbr,unassigned

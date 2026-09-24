@@ -1,0 +1,11 @@
+G04 初始未指派角色的候选内层（mm, 3:3）；层角色修订后成为第二层铜*
+%FSLAX33Y33*%
+%MOMM*%
+%TF.FileFunction,Copper,X,Unassigned*%
+%ADD10R,2.0X2.0*%
+%LPD*%
+D10*
+X07620Y02540D03*
+X07620Y02540D01*
+X10210Y02540D01*
+M02*
