@@ -1,0 +1,23 @@
+[package]
+name = "copper-trace-bench"
+version = "0.1.0"
+edition = "2021"
+description = "铜层连通谱：Gerber 图层、孔表与网络候选核验台"
+
+[lib]
+name = "ctb"
+path = "src/lib.rs"
+
+[[bin]]
+name = "copper-trace-bench"
+path = "src/main.rs"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+rusqlite = { version = "0.31", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+sha2 = "0.10"
+anyhow = "1"
+thiserror = "1"
