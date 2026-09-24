@@ -1,0 +1,24 @@
+[package]
+name = "pcb-gsb"
+version = "0.1.0"
+edition = "2021"
+description = "铜层连通谱：Gerber 图层、孔表与网络候选核验台（离线 PCB/Gerber/几何连通应用）"
+
+[lib]
+name = "pcb_gsb"
+path = "src/lib.rs"
+
+[[bin]]
+name = "pcb-gsb"
+path = "src/main.rs"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net"] }
+rusqlite = { version = "0.31", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+
+[profile.release]
+opt-level = 2
