@@ -1,0 +1,20 @@
+[package]
+name = "pcb-gerber-connectivity"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.8"
+rusqlite = { version = "0.37", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { value = "1", features = ["preserve_order"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "signal", "sync"] }
+tower-listener = "0.4"
+
+[dev-dependencies]
+tower = { version = "0.5", features = ["util"] }
+http-body-util = "0.1"
+
+[[bin]]
+name = "pcb-gerber-connectivity"
+path = "src/main.rs"
