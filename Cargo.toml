@@ -1,0 +1,26 @@
+[package]
+name = "pcb-connectivity"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "pcb"
+path = "src/lib.rs"
+
+[[bin]]
+name = "pcb-connectivity"
+path = "src/main.rs"
+
+[dependencies]
+axum = "0.8"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "signal", "sync"] }
+rusqlite = { version = "0.37", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+sha2 = "0.10"
+hex = "0.4"
+clap = { version = "4", features = ["derive"] }
+
+[dev-dependencies]
+tower = { version = "0.5", features = ["util"] }
+http-body-util = "0.1"
