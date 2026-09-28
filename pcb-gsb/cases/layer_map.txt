@@ -1,0 +1,7 @@
+# Manual mapping preserved verbatim; role revisions never rewrite this file.
+# Drill files carry their own layer span (through-all / blind) and are not
+# pinned to a single copper layer.
+MAP top_copper.gbr L1
+MAP inner_copper.gbr L2
+MAP bot_copper.gbr L4
+MAP top_mask.gbr L1

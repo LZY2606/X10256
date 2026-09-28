@@ -1,0 +1,10 @@
+G04 Bottom copper - pads within tolerance, no netlist*
+%FSLAX36Y36*%
+%MOMM*%
+%TF.FileFunction,Copper,L3,Bot*%
+%ADD10C,1.000mm*%
+D10*
+X1000000Y2000000D03*
+X2005000Y2000000D03*
+X4000000Y2000000D03*
+M02*

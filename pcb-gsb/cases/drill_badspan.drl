@@ -1,0 +1,8 @@
+M48
+; LAYER_SPAN L7-L9 off-board span (semantic impossibility)
+METRIC,TZ
+T3C0.2000 PLATED
+%
+T3
+X001000Y001000
+M30

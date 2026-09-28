@@ -1,0 +1,5 @@
+# 4-layer demo stackup, domain-specific
+LAYER 0 TopCu copper 0.035mm
+LAYER 1 Gnd copper 0.035mm
+LAYER 2 Sig copper 0.035mm
+LAYER 3 BotCu copper 0.035mm

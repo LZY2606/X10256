@@ -1,0 +1,9 @@
+G04 Solder mask openings - clear polarity*
+%FSLAX36Y36*%
+%MOMM*%
+%TF.FileFunction,SolderMask,L1,Top*%
+%ADD10C,1.200mm*%
+%LPC*%
+D10*
+X1000000Y2000000D03*
+M02*
