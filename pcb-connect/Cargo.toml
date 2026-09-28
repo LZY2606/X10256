@@ -1,0 +1,20 @@
+[package]
+name = "pcb-connect"
+version = "0.1.0"
+edition = "2021"
+description = "Offline PCB Gerber/Excellon/stackup import and electrical connectivity candidate review"
+
+[[bin]]
+name = "pcb-connect"
+path = "src/main.rs"
+
+[lib]
+name = "pcb_connect"
+path = "src/lib.rs"
+
+[dependencies]
+axum = { version = "0.8.9", default-features = false, features = ["form", "http1", "matched-path", "query", "tokio", "tower-log"] }
+tokio = { version = "1.53", features = ["rt-multi-thread", "macros", "net", "time", "sync"] }
+rusqlite = { version = "0.37", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
